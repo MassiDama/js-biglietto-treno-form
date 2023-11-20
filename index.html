@@ -10,31 +10,33 @@
     <div class="container">
 
             <!-- struttura  info principale-->
-            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-            <section class="info">
-                <div class="user ">
-                    <span>Nome e Cognome</span>
-                    <input type="text" class="info-name">
-                </div>
-                <div class="user km">
-                    <span>Km da percorrere</span>
-                    <input type="number" class="info-km">
-                </div>
-                <div class="user age">
-                    <span>Fascia d'età</span>
-                    <input type="number" class="info-age">
-                </div>
-            </section>
-            <section class="comandi">
-                <button id="genera-dati">Genera</button>
-                <button id="resetta-dati">Annulla</button>
-            </section>
+            <div class="main">
+                <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                <section class="info">
+                    <div class="user ">
+                        <span>Nome e Cognome</span>
+                        <input type="text" class="info-name" placeholder="Inserisci nome e cognome..">
+                    </div>
+                    <div class="user">
+                        <span>Km da percorrere</span>
+                        <input type="number" class="info-km" placeholder="Inserisci km..">
+                    </div>
+                    <div class="user">
+                        <span>Fascia d'età</span>
+                        <input type="number" class="info-age" placeholder="Inserisci la tuà età..">
+                    </div>
+                </section>
+                <section class="comandi">
+                    <button id="genera-dati">Genera</button>
+                    <button id="resetta-dati">Annulla</button>
+                </section>
+            </div>
     
 
             <!-- struttura container ghost -->
-            <div class="container ghost">
+            <div class="ghost">
 
-                <h1>IL TUO BIGLIETTO</h1>
+                <h1>MY TICKET</h1>
                 <section class="info">
                     <div class="info-ticket">
                         <span>Nome del passeggero</span>

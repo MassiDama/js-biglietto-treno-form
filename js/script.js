@@ -10,11 +10,7 @@ const inputAge = document.querySelector(".info-age");
 let infoName;
 let infoKm;
 let infoAge;
-
-// prezzo del biglietto dato da 0.21€ al km
-let priceTicket = 0.21 * inputKm.value;
-
-console.log(priceTicket);
+let priceTicket;
 
 // Selezione del bottone invio dati
 const sendButton = document.getElementById("genera-dati");
@@ -25,7 +21,12 @@ sendButton.addEventListener("click",
         infoName = inputName.value;
         infoKm = parseInt(inputKm.value);
         infoAge = parseInt(inputAge.value);
-        
+        // prezzo del biglietto dato da 0.21€ al km
+        priceTicket = 0.21 * inputKm.value;
+
+        console.log("Nome user: " + infoName,", Km user: " + infoKm, ", Età user: " + infoAge, ", Prezzo base del biglietto: " + priceTicket);
+
+        // inserimento innerhtml nella classe .name-user
         document.querySelector(".name-user").innerHTML = inputName.value;
 
         // condizioni per gli sconti che vanno effettuati
@@ -43,9 +44,11 @@ sendButton.addEventListener("click",
             
         }      
 
+        // troncatore decimale
         finalPrice = finalPrice.toFixed(2)
 
-        document.getElementById("price-ticket").innerHTML = finalPrice;
+        // inserimento dei vari innerhtml 
+        document.getElementById("price-ticket").innerHTML = finalPrice + " €";
         document.querySelector(".carrozza-random").innerHTML = Math.floor(Math.random() * 100);
         document.querySelector(".codice-random").innerHTML = Math.floor(Math.random() * 100000);
 

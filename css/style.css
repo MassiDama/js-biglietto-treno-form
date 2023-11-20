@@ -5,9 +5,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(../img/treno.jpg);
+    background-size: 21%;
+}
+
 .container {
     width: 60%;
     margin: 0 auto;
+    background-color:#ffdeb8e8;
+    border-radius: 10px;
 }
 
 /* stili section info */
@@ -18,6 +25,7 @@ h1 {
 
 span {
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .info {
@@ -32,6 +40,10 @@ span {
     text-align: center;
 }
 
+.user input {
+    padding: 5px;
+}
+
 /* stili section comandi */
 .comandi {
     text-align: center;
@@ -39,6 +51,11 @@ span {
 
 .comandi button {
     margin: 20px;
+    padding: 10px 50px;
+    background-color: #e36c4a;
+    color: white;
+    font-weight: bold;
+    border: none;
 }
 
 /* stili info ticket */
@@ -49,10 +66,21 @@ span {
     text-align: center;
 }
 
+.info-ticket span:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info-ticket span:last-child {
+    font-style: italic;
+}
 
 .ghost {
     display: none;
     width: 100%;
+    height: 300px;
+    background-color: #91c2b4cf;
+    color: #e76f4d;
+    border-radius: 10px;
     
-
 }
