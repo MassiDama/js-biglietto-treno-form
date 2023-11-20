@@ -21,6 +21,8 @@ body {
 h1 {
     text-align: center;
     margin-top: 50px;
+    padding-top: 5px;
+    
 }
 
 span {
@@ -42,6 +44,7 @@ span {
 
 .user input {
     padding: 5px;
+    border: 3px solid #a4c6b3;
 }
 
 /* stili section comandi */
@@ -56,6 +59,7 @@ span {
     color: white;
     font-weight: bold;
     border: none;
+    border: 3px solid #a4c6b3;
 }
 
 /* stili info ticket */
