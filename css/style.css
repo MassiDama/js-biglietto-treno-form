@@ -5,14 +5,54 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
 /* stili section info */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+span {
+    margin-bottom: 20px;
+}
+
 .info {
     display: flex;
+    justify-content: center;
 }
 
 .user {
     display: flex;
     flex-direction: column;
     margin: 50px;
+    text-align: center;
 }
 
+/* stili section comandi */
+.comandi {
+    text-align: center;
+}
+
+.comandi button {
+    margin: 20px;
+}
+
+/* stili info ticket */
+.info-ticket {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    text-align: center;
+}
+
+
+.ghost {
+    display: none;
+    width: 100%;
+    
+
+}

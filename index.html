@@ -7,29 +7,58 @@
     <title>Biglietto treno form</title>
 </head>
 <body>
-    <header>
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    </header>
-    <main>
-        <section class="info">
-            <div class="user name">
-                <span>Nome e Cognome</span>
-                <input type="text" class="info-name">
+    <div class="container">
+
+            <!-- struttura  info principale-->
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <section class="info">
+                <div class="user ">
+                    <span>Nome e Cognome</span>
+                    <input type="text" class="info-name">
+                </div>
+                <div class="user km">
+                    <span>Km da percorrere</span>
+                    <input type="number" class="info-km">
+                </div>
+                <div class="user age">
+                    <span>Fascia d'età</span>
+                    <input type="number" class="info-age">
+                </div>
+            </section>
+            <section class="comandi">
+                <button id="genera-dati">Genera</button>
+                <button id="resetta-dati">Annulla</button>
+            </section>
+    
+
+            <!-- struttura container ghost -->
+            <div class="container ghost">
+
+                <h1>IL TUO BIGLIETTO</h1>
+                <section class="info">
+                    <div class="info-ticket">
+                        <span>Nome del passeggero</span>
+                        <span class="name-user"></span>
+                    </div>
+                    <div class="info-ticket">
+                        <span>Offerta</span>
+                        <span class="offerta"></span>
+                    </div>
+                    <div class="info-ticket">
+                        <span>Carrozza</span>
+                        <span class="carrozza-random"></span>
+                    </div>
+                    <div class="info-ticket">
+                        <span>Codice CP</span>
+                        <span class="codice-random"></span>
+                    </div>
+                    <div class="info-ticket">
+                        <span>Costo Biglietto</span>
+                        <span id="price-ticket"></span>
+                    </div>  
+                </section>
             </div>
-            <div class="user km">
-                <span>Km da percorrere</span>
-                <input type="number" class="info-km">
-            </div>
-            <div class="user gender">
-                <span>Fascia d'età</span>
-                <input type="number" class="info-gender">
-            </div>
-        </section>
-        <section class="comandi">
-            <button id="genera-dati">Genera</button>
-            <button>Annulla</button>
-        </section>
-    </main>
+    </div>
 
 
     <script src="js/script.js"></script>
